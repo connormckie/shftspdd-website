@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — SHFTSPDD</title>
+    <meta name="description" content="SHFTSPDD — hard techno DJ/producer duo from North West UK." />
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="header">
+      <a href="index.html" class="header__logo" aria-label="SHFTSPDD home">
+        <span class="logo-frame">
+          <img src="assets/logo.jpg" alt="" width="48" height="48" class="logo-frame__img" />
+        </span>
+        <span class="header__wordmark">SHFTSPDD</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+        <a
+          href="https://soundcloud.com/shftspdd"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav__external"
+        >
+          SoundCloud
+        </a>
+      </nav>
+      <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+    </nav>
+
+    <main class="page">
+      <section class="section about">
+        <div class="section__head">
+          <p class="section-label">The duo</p>
+          <h1>About</h1>
+        </div>
+        <div class="about__grid">
+          <p class="about__text">
+            SHFTSPDD is a hard techno duo from the North West of the UK — raw energy, driving kicks,
+            and warehouse-ready productions built for the floor.
+          </p>
+          <ul class="about__facts">
+            <li>
+              <span class="about__fact-label">Genre</span>
+              <span>Hard Techno</span>
+            </li>
+            <li>
+              <span class="about__fact-label">Role</span>
+              <span>DJ / Producers</span>
+            </li>
+            <li>
+              <span class="about__fact-label">Based</span>
+              <span>North West UK</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> SHFTSPDD</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

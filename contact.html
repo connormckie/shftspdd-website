@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — SHFTSPDD</title>
+    <meta name="description" content="Book SHFTSPDD — hard techno duo. Enquiries and collabs." />
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="header">
+      <a href="index.html" class="header__logo" aria-label="SHFTSPDD home">
+        <span class="logo-frame">
+          <img src="assets/logo.jpg" alt="" width="48" height="48" class="logo-frame__img" />
+        </span>
+        <span class="header__wordmark">SHFTSPDD</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a
+          href="https://soundcloud.com/shftspdd"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav__external"
+        >
+          SoundCloud
+        </a>
+      </nav>
+      <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+    </nav>
+
+    <main class="page">
+      <section class="section contact">
+        <div class="section__head">
+          <p class="section-label">Get in touch</p>
+          <h1>Contact</h1>
+        </div>
+        <div class="contact__card">
+          <p>For bookings, collabs, and further enquiries:</p>
+          <a href="mailto:OTFRtechno@gmail.com" class="contact__email">OTFRtechno@gmail.com</a>
+          <div class="contact__links">
+            <a
+              href="https://soundcloud.com/shftspdd"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--ghost"
+            >
+              SoundCloud
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> SHFTSPDD</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
