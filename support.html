@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — SHFTSPDD</title>
+    <meta
+      name="description"
+      content="SHFTSPDD tracks supported on festival stages — clips from artists playing our music."
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="header">
+      <a href="index.html" class="header__logo" aria-label="SHFTSPDD home">
+        <span class="logo-frame">
+          <img src="assets/logo.jpg" alt="" width="48" height="48" class="logo-frame__img" />
+        </span>
+        <span class="header__wordmark">SHFTSPDD</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a
+          href="https://soundcloud.com/shftspdd"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav__external"
+        >
+          SoundCloud
+        </a>
+      </nav>
+      <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+      <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+      <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </nav>
+
+    <main class="page">
+      <section class="section support">
+        <div class="section__head">
+          <p class="section-label">Festival floors</p>
+          <h1>Support</h1>
+        </div>
+        <p class="support__intro">
+          Clips of artists dropping SHFTSPDD on festival and club stages — shared from Instagram,
+          TikTok, and YouTube.
+        </p>
+
+        <ul class="support-names" aria-label="Artists who have supported">
+          <li>I Hate Models</li>
+          <li>NUSHA</li>
+          <li>TANJA MIJU</li>
+        </ul>
+
+        <div id="support-empty" class="support-empty" hidden>
+          <p>Video embeds go live as soon as clip links are added.</p>
+          <p class="support-empty__hint">
+            Paste Instagram reel, TikTok, or YouTube URLs into
+            <code>support-clips.js</code> — or send them and we’ll wire them up.
+          </p>
+        </div>
+
+        <div id="support-grid" class="support-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__wordmark">SHFTSPDD</span>
+          <p>© <span id="year"></span> SHFTSPDD</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="music.html">Music</a>
+          <a href="support.html">Support</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="socials">
+          <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+          <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+          <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="support-clips.js"></script>
+    <script src="support-render.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
