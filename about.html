@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About — SHFTSPDD</title>
     <meta name="description" content="SHFTSPDD — hard techno DJ/producer duo from North West UK." />
+    <meta name="theme-color" content="#000000" />
     <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +29,7 @@
       <nav class="nav" aria-label="Main">
         <a href="index.html">Home</a>
         <a href="music.html">Music</a>
+        <a href="support.html">Support</a>
         <a href="about.html" aria-current="page">About</a>
         <a href="contact.html">Contact</a>
         <a
@@ -48,9 +50,12 @@
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
       <a href="index.html">Home</a>
       <a href="music.html">Music</a>
+      <a href="support.html">Support</a>
       <a href="about.html" aria-current="page">About</a>
       <a href="contact.html">Contact</a>
       <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+      <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+      <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
     </nav>
 
     <main class="page">
@@ -60,10 +65,17 @@
           <h1>About</h1>
         </div>
         <div class="about__grid">
-          <p class="about__text">
-            SHFTSPDD is a hard techno duo from the North West of the UK — raw energy, driving kicks,
-            and warehouse-ready productions built for the floor.
-          </p>
+          <div>
+            <p class="about__text">
+              SHFTSPDD is a hard techno duo from the North West of the UK — raw energy, driving kicks,
+              and warehouse-ready productions built for the floor.
+            </p>
+            <p class="about__text" style="margin-top: 1.25rem">
+              From club systems to late-night warehouse rooms, the project is built around pressure,
+              groove, and tracks that cut through a dark room. Releases land on SoundCloud with free
+              downloads where available — follow for the next one.
+            </p>
+          </div>
           <ul class="about__facts">
             <li>
               <span class="about__fact-label">Genre</span>
@@ -77,13 +89,44 @@
               <span class="about__fact-label">Based</span>
               <span>North West UK</span>
             </li>
+            <li>
+              <span class="about__fact-label">Contact</span>
+              <span><a href="mailto:OTFRtechno@gmail.com">Email</a></span>
+            </li>
           </ul>
+        </div>
+
+        <div class="cta-band" style="margin-top: 3rem">
+          <div class="cta-band__copy">
+            <h2>Listen &amp; book</h2>
+            <p>Stream the latest, or reach out for bookings and collabs.</p>
+          </div>
+          <div class="hero__actions">
+            <a href="music.html" class="btn btn--primary">Music</a>
+            <a href="contact.html" class="btn btn--ghost">Contact</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> SHFTSPDD</p>
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__wordmark">SHFTSPDD</span>
+          <p>© <span id="year"></span> SHFTSPDD</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="music.html">Music</a>
+          <a href="support.html">Support</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="socials">
+          <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+          <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+          <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>

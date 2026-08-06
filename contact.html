@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact — SHFTSPDD</title>
     <meta name="description" content="Book SHFTSPDD — hard techno duo. Enquiries and collabs." />
+    <meta name="theme-color" content="#000000" />
     <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +29,7 @@
       <nav class="nav" aria-label="Main">
         <a href="index.html">Home</a>
         <a href="music.html">Music</a>
+        <a href="support.html">Support</a>
         <a href="about.html">About</a>
         <a href="contact.html" aria-current="page">Contact</a>
         <a
@@ -48,9 +50,12 @@
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
       <a href="index.html">Home</a>
       <a href="music.html">Music</a>
+      <a href="support.html">Support</a>
       <a href="about.html">About</a>
       <a href="contact.html" aria-current="page">Contact</a>
       <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+      <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+      <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
     </nav>
 
     <main class="page">
@@ -61,8 +66,22 @@
         </div>
         <div class="contact__card">
           <p>For bookings, collabs, and further enquiries:</p>
-          <a href="mailto:OTFRtechno@gmail.com" class="contact__email">OTFRtechno@gmail.com</a>
+          <a
+            href="mailto:OTFRtechno@gmail.com?subject=SHFTSPDD%20booking%20enquiry"
+            class="contact__email"
+          >
+            OTFRtechno@gmail.com
+          </a>
+          <p style="margin-bottom: 1.25rem">
+            Include date, venue/city, set length, and fee range when booking — faster reply.
+          </p>
           <div class="contact__links">
+            <a
+              href="mailto:OTFRtechno@gmail.com?subject=SHFTSPDD%20booking%20enquiry"
+              class="btn btn--primary"
+            >
+              Email
+            </a>
             <a
               href="https://soundcloud.com/shftspdd"
               target="_blank"
@@ -71,13 +90,45 @@
             >
               SoundCloud
             </a>
+            <a
+              href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--ghost"
+            >
+              Spotify
+            </a>
+            <a
+              href="https://www.instagram.com/shftspdd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--ghost"
+            >
+              Instagram
+            </a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> SHFTSPDD</p>
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__wordmark">SHFTSPDD</span>
+          <p>© <span id="year"></span> SHFTSPDD</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="music.html">Music</a>
+          <a href="support.html">Support</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="socials">
+          <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+          <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+          <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>

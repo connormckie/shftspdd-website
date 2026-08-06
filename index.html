@@ -8,10 +8,14 @@
       name="description"
       content="SHFTSPDD — hard techno DJ/producer duo from North West UK. Stream tracks and get in touch for bookings."
     />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="SHFTSPDD" />
     <meta property="og:description" content="Hard techno · DJ/Producers · North West UK" />
     <meta property="og:image" content="assets/logo.jpg" />
-    <meta property="og:url" content="https://soundcloud.com/shftspdd" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SHFTSPDD" />
+    <meta name="twitter:description" content="Hard techno · DJ/Producers · North West UK" />
     <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +39,7 @@
       <nav class="nav" aria-label="Main">
         <a href="index.html" aria-current="page">Home</a>
         <a href="music.html">Music</a>
+        <a href="support.html">Support</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a
@@ -55,9 +60,12 @@
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
       <a href="index.html" aria-current="page">Home</a>
       <a href="music.html">Music</a>
+      <a href="support.html">Support</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+      <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+      <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
     </nav>
 
     <main>
@@ -91,15 +99,142 @@
             <a href="music.html" class="btn btn--primary">Listen</a>
             <a href="contact.html" class="btn btn--ghost">Bookings</a>
           </div>
-          <a href="music.html" class="hero__scroll" aria-label="Go to music page">
+          <a href="#featured" class="hero__scroll" aria-label="Scroll to featured tracks">
             <span class="hero__scroll-line"></span>
           </a>
         </div>
       </section>
+
+      <div class="home-band">
+        <section id="featured" class="section home-featured">
+          <div class="section__head">
+            <p class="section-label">Releases</p>
+            <h2>Featured tracks</h2>
+          </div>
+          <ul class="track-list">
+            <li class="track">
+              <div class="track__meta">
+                <span class="track__badge track__badge--free">Free download</span>
+                <h3>Make You Move</h3>
+                <div class="track__actions">
+                  <a href="music.html" class="track__link">Play on site →</a>
+                  <a
+                    href="https://open.spotify.com/track/2meb3QLV8lLzQf9lvUCiJu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="track__link"
+                  >
+                    Spotify
+                  </a>
+                  <a
+                    href="https://hypeddit.com/shftspdd/makeyoumove-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="track__link"
+                  >
+                    Free DL
+                  </a>
+                </div>
+              </div>
+              <a href="music.html" class="btn btn--ghost">Listen</a>
+            </li>
+            <li class="track">
+              <div class="track__meta">
+                <span class="track__badge">Release</span>
+                <h3>Diamonds AM</h3>
+                <div class="track__actions">
+                  <a href="music.html" class="track__link">Play on site →</a>
+                  <a
+                    href="https://open.spotify.com/track/7KmpOWbFOqYw4srqEcK4E4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="track__link"
+                  >
+                    Spotify
+                  </a>
+                  <a
+                    href="https://hypeddit.com/shftspdd/diamonds"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="track__link"
+                  >
+                    Get it
+                  </a>
+                </div>
+              </div>
+              <a href="music.html" class="btn btn--ghost">Listen</a>
+            </li>
+          </ul>
+          <p style="margin: 2rem 0 0">
+            <a href="music.html" class="btn btn--primary">All music</a>
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="section__head">
+            <p class="section-label">Festival floors</p>
+            <h2>Support</h2>
+          </div>
+          <div class="home-about-teaser">
+            <div>
+              <p>
+                Tracks supported on big stages — clips of artists playing SHFTSPDD at festivals and clubs,
+                pulled from Instagram, TikTok, and YouTube.
+              </p>
+              <ul class="support-names" style="margin-top: 1.25rem; margin-bottom: 0">
+                <li>I Hate Models</li>
+                <li>NUSHA</li>
+                <li>TANJA MIJU</li>
+              </ul>
+            </div>
+            <a href="support.html" class="btn btn--ghost">Watch clips</a>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__head">
+            <p class="section-label">The duo</p>
+            <h2>About</h2>
+          </div>
+          <div class="home-about-teaser">
+            <p>
+              SHFTSPDD is a hard techno duo from the North West of the UK — raw energy, driving kicks,
+              and warehouse-ready productions built for the floor.
+            </p>
+            <a href="about.html" class="btn btn--ghost">Read more</a>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="cta-band">
+            <div class="cta-band__copy">
+              <h2>Bookings &amp; enquiries</h2>
+              <p>Club sets, warehouse nights, collabs — get in touch.</p>
+            </div>
+            <a href="contact.html" class="btn btn--primary">Contact</a>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> SHFTSPDD</p>
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__wordmark">SHFTSPDD</span>
+          <p>© <span id="year"></span> SHFTSPDD</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="music.html">Music</a>
+          <a href="support.html">Support</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="socials">
+          <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+          <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+          <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
     </footer>
 
     <script src="warp.js"></script>
