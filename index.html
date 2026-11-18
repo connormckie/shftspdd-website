@@ -23,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=23" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -31,16 +31,15 @@
 
     <header class="header">
       <a href="index.html" class="header__logo" aria-label="SHFTSPDD home">
-        <span class="logo-frame">
-          <img src="assets/logo.jpg" alt="" width="48" height="48" class="logo-frame__img" />
-        </span>
-        <span class="header__wordmark">SHFTSPDD</span>
+        <img class="header__mark" src="assets/logo-wordmark.png?v=1" alt="SHFTSPDD" width="404" height="57" />
       </a>
       <nav class="nav" aria-label="Main">
         <a href="index.html" aria-current="page">Home</a>
         <a href="music.html">Music</a>
         <a href="support.html">Support</a>
+        <a href="gallery.html">Gallery</a>
         <a href="about.html">About</a>
+        <a href="epk.html">EPK</a>
         <a href="contact.html">Contact</a>
         <a
           href="https://soundcloud.com/shftspdd"
@@ -61,7 +60,9 @@
       <a href="index.html" aria-current="page">Home</a>
       <a href="music.html">Music</a>
       <a href="support.html">Support</a>
+      <a href="gallery.html">Gallery</a>
       <a href="about.html">About</a>
+      <a href="epk.html">EPK</a>
       <a href="contact.html">Contact</a>
       <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
       <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
@@ -69,8 +70,11 @@
     </nav>
 
     <main>
-      <section class="hero hero--warp" aria-label="SHFTSPDD">
-        <canvas id="warp-canvas" class="warp-canvas" aria-hidden="true"></canvas>
+      <section class="hero hero--warp hero--metal" aria-label="SHFTSPDD">
+        <div class="metal-bg" aria-hidden="true">
+          <img class="metal-bg__plate" src="assets/liquid-metal.jpg?v=4" alt="" />
+          <canvas class="metal-bg__glint" width="2" height="2"></canvas>
+        </div>
         <div class="hero__vignette" aria-hidden="true"></div>
 
         <h1 class="visually-hidden">SHFTSPDD</h1>
@@ -87,17 +91,13 @@
         </div>
 
         <div class="hero__copy">
-          <p class="hero__shift-meter" id="shift-meter" aria-hidden="true">
-            <span class="hero__shift-label">SHIFTING SPEED</span>
-            <span class="hero__shift-bar"><span class="hero__shift-fill" id="shift-fill"></span></span>
-          </p>
           <p class="hero__eyebrow">Hard Techno · DJ/Producers · North West UK</p>
         </div>
 
         <div class="hero__dock">
           <div class="hero__actions">
             <a href="music.html" class="btn btn--primary">Listen</a>
-            <a href="contact.html" class="btn btn--ghost">Bookings</a>
+            <a href="epk.html" class="btn btn--ghost">Bookings</a>
           </div>
           <a href="#featured" class="hero__scroll" aria-label="Scroll to featured tracks">
             <span class="hero__scroll-line"></span>
@@ -226,7 +226,9 @@
         <nav class="footer__nav" aria-label="Footer">
           <a href="music.html">Music</a>
           <a href="support.html">Support</a>
+          <a href="gallery.html">Gallery</a>
           <a href="about.html">About</a>
+          <a href="epk.html">EPK</a>
           <a href="contact.html">Contact</a>
         </nav>
         <div class="socials">
@@ -237,7 +239,7 @@
       </div>
     </footer>
 
-    <script src="warp.js"></script>
     <script src="script.js"></script>
+    <script src="metal-shine.js?v=1"></script>
   </body>
 </html>

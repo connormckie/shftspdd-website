@@ -6,6 +6,7 @@
 
   if (!canvas) return;
 
+  const pageBg = canvas.classList.contains("warp-canvas--page");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const ctx = canvas.getContext("2d");
   const focal = 280;
@@ -23,6 +24,11 @@
   let burstCooldown = 0;
 
   function updateWarpCenter() {
+    if (pageBg) {
+      cx = width / 2;
+      cy = height / 2;
+      return;
+    }
     const logo = document.getElementById("hero-logo");
     const canvasRect = canvas.getBoundingClientRect();
     if (logo) {
@@ -37,9 +43,14 @@
 
   function resize() {
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const hero = canvas.parentElement;
-    width = hero ? hero.clientWidth : window.innerWidth;
-    height = hero ? hero.clientHeight : window.innerHeight;
+    if (pageBg) {
+      width = window.innerWidth;
+      height = window.innerHeight;
+    } else {
+      const hero = canvas.parentElement;
+      width = hero ? hero.clientWidth : window.innerWidth;
+      height = hero ? hero.clientHeight : window.innerHeight;
+    }
     canvas.width = width * dpr;
     canvas.height = height * dpr;
     canvas.style.width = width + "px";

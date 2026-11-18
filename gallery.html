@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery — SHFTSPDD</title>
+    <meta
+      name="description"
+      content="SHFTSPDD gallery — press photos, live shots, and artwork. Hard techno duo from North West UK."
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SHFTSPDD — Gallery" />
+    <meta property="og:description" content="Press · live · artwork" />
+    <meta property="og:image" content="assets/logo.jpg" />
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=23" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <canvas id="warp-canvas" class="warp-canvas warp-canvas--page" aria-hidden="true"></canvas>
+
+    <header class="header">
+      <a href="index.html" class="header__logo" aria-label="SHFTSPDD home">
+        <img class="header__mark" src="assets/logo-wordmark.png?v=1" alt="SHFTSPDD" width="404" height="57" />
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="support.html">Support</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="epk.html">EPK</a>
+        <a href="contact.html">Contact</a>
+        <a
+          href="https://soundcloud.com/shftspdd"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav__external"
+        >
+          SoundCloud
+        </a>
+      </nav>
+      <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="support.html">Support</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="epk.html">EPK</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+      <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+      <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </nav>
+
+    <main class="page">
+      <section class="section gallery">
+        <div class="section__head">
+          <p class="section-label">Visuals</p>
+          <h1>Gallery</h1>
+        </div>
+        <p class="gallery__intro">
+          Press, live, and artwork for SHFTSPDD — warehouse stills, duo shots, release visuals.
+        </p>
+
+        <div id="gallery-empty" class="support-empty">
+          <p>Gallery slots are ready. Photos go up after the next shoot.</p>
+          <p class="support-empty__hint">
+            For us: drop files in <code>assets/gallery/</code>, then list them in
+            <code>gallery-photos.js</code>.
+          </p>
+        </div>
+
+        <div id="gallery-filters" class="gallery-filters" hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="press" aria-pressed="false">Press</button>
+          <button type="button" data-filter="live" aria-pressed="false">Live</button>
+          <button type="button" data-filter="artwork" aria-pressed="false">Artwork</button>
+        </div>
+
+        <ul id="gallery-grid" class="gallery-grid" aria-label="Photo gallery"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__wordmark">SHFTSPDD</span>
+          <p>© <span id="year"></span> SHFTSPDD</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="music.html">Music</a>
+          <a href="support.html">Support</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="epk.html">EPK</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="socials">
+          <a href="https://soundcloud.com/shftspdd" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+          <a href="https://open.spotify.com/artist/30yTtz0pY3yEGr56ws4N3b" target="_blank" rel="noopener noreferrer">Spotify</a>
+          <a href="https://www.instagram.com/shftspdd/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="gallery-photos.js"></script>
+    <script src="gallery-render.js"></script>
+    <script src="warp.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
